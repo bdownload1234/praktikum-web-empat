@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>0110220290-HOERUDIN-TI08</title>
+     <script src="assets/script.js"></script>
+ </head>
+
+ <body>
+     <form>
+         <div>
+             <h2>Kurs Rupiah - Mata Uang Asing</h2>
+             <hr />
+             <div>
+                 <div class="col">
+                     <div>
+                         <label>Kurs</label>
+                         <input type="text" name="nilai" id="nilai" onchange="kurshitung()" />
+                     </div>
+                 </div>
+                 <div>
+                     <div>
+                         <label>Valas</label>
+                         <select name="valas" id="valas" class="input select" onchange="kurshitung()">
+                             <option value="0">Dollar US</option>
+                             <option value="1">Dollar Singapura</option>
+                             <option value="2">Ringgit Malaysia</option>
+                             <option value="3">Yen Jepang</option>
+                             <option value="4">Euro</option>
+                             <option value="5">Riyal Arap Saudi</option>
+                         </select>
+                     </div>
+                 </div>
+                 <div>
+                     <div>
+                         <label>Nilai Rupiah</label>
+                         <input type="text" name="hasil" id="hasil" readonly />
+                     </div>
+                 </div>
+             </div>
+             <h3 id="textOutput"></h3>
+         </div>
+     </form>
+ </body>
+
+ </html>
